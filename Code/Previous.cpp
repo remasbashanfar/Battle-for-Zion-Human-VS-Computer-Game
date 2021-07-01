@@ -43,17 +43,26 @@ void Previous::showPreviousMoves() const{
     char display[MAXROWS][MAXCOLS];
     
         // Fill the grid with dots
-    for (int r = 0; r < m_arena->rows(); r++)
+//    for (int r = 0; r < m_arena->rows(); r++)
+//    {
+//        for (int c = 0; c < m_arena->cols(); c++)
+//        {
+//            display[r][c] = '.';
+//        }
+//    }
+    for (int r = 0; r < m_rows; r++)
     {
-        for (int c = 0; c < m_arena->cols(); c++)
+        for (int c = 0; c < m_cols; c++)
         {
             display[r][c] = '.';
         }
     }
-    int m_moves = board[m_rows][m_cols];//NOT SURE
+    
+    int m_moves = board[m_rows-1][m_cols-1];//NOT SURE
     if ( m_player != nullptr)
     {
-        char& gridChar = display[m_player->row()-1][m_player->col()-1];
+        //char gridChar = display[m_player->row()-1][m_player->col()-1];
+        char gridChar = display[m_rows-1][m_cols-1];
 
                 if (m_moves == 0)
                 gridChar = '.';
@@ -110,14 +119,21 @@ void Previous::showPreviousMoves() const{
             else if (m_moves >= 26)
                 gridChar = 'Z';
         }
-    for (int r = 0; r < m_arena->rows(); r++)
+//    for (int r = 0; r < m_arena->rows(); r++)
+//    {
+//        for (int c = 0; c < m_arena->cols(); c++)
+//        {
+//            cout << display[r][c];
+//        }
+//        cout << endl;
+//    }
+    for (int r = 0; r < m_rows; r++)
     {
-        for (int c = 0; c < m_arena->cols(); c++)
+        for (int c = 0; c < m_cols; c++)
         {
             cout << display[r][c];
         }
         cout << endl;
     }
-    
     
 }
