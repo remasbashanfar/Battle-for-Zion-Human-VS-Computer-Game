@@ -4,10 +4,6 @@
 //
 //  Created by Remas Bashanfar on 6/24/21.
 //
-//#include "Arena.h"
-//#include "Player.h"
-//#include "Robot.h"
-//#include "Game.h"
 #include "globals.h"
 #include <iostream>
 using namespace std;
@@ -35,9 +31,6 @@ int decodeDirection(char dir)
 //  clearScreen implementations
 ///////////////////////////////////////////////////////////////////////////
 
-// Note to Xcode users:  clearScreen() will just write a newline instead
-// of clearing the window if you launch your program from within Xcode.
-// That's acceptable.
 
 #ifdef _MSC_VER  //  Microsoft Visual C++
 
