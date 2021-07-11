@@ -4,7 +4,6 @@
 //
 //  Created by Remas Bashanfar on 6/24/21.
 //
-//#include "Arena.h" //WOW
 #include "globals.h"
 #include <iostream>
 #include <string>
