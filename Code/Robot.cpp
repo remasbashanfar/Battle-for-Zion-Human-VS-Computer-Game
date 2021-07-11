@@ -4,10 +4,8 @@
 //
 //  Created by Remas Bashanfar on 6/24/21.
 //
-//#include "globals.h"
-//#include "Player.h"
-//#include "Game.h"
-#include "Arena.h" //ADD //WOW
+
+#include "Arena.h"
 #include "Robot.h"
 #include <iostream>
 #include <string>
