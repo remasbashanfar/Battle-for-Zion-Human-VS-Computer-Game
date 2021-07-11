@@ -4,7 +4,6 @@
 //
 //  Created by Remas Bashanfar on 6/24/21.
 //
-//#include "Arena.h" //DELETE//WOW
 #include "globals.h"
 #include <iostream>
 #include <string>
@@ -13,8 +12,7 @@
 
 #ifndef Robot_h
 #define Robot_h
-class Arena;  // This is needed to let the compiler know that Arena is a
-              // type name, since it's mentioned in the Robot declaration.
+class Arena;  
 
 class Robot
 {
