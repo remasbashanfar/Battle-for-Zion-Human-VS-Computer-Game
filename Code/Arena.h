@@ -4,14 +4,14 @@
 //
 //  Created by Remas Bashanfar on 6/24/21.
 //
-#include "Previous.h"//SOOOON
+#include "Previous.h"
 #ifndef Arena_h
 #define Arena_h
-#include "globals.h" //should b included even if it compiles w/o it
+#include "globals.h" 
 #include <string>
 #include <cstdlib>
 #include <ctime>
-class Robot;//ADD
+class Robot;
 class Player;
 class Arena
 {
@@ -32,7 +32,7 @@ class Arena
     bool   addRobot(int r, int c);
     bool   addPlayer(int r, int c);
     void   damageRobotAt(int r, int c);
-    bool   moveRobots();//use to access previous members and will help in incrememnting
+    bool   moveRobots();
     Previous& thePrevious();
 
 
@@ -42,7 +42,7 @@ class Arena
     Player* m_player;
     Robot*  m_robots[MAXROBOTS];
     int     m_nRobots;
-    Previous m_previous;//set new
+    Previous m_previous;
 
 };
 
